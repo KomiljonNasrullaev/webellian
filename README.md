@@ -37,3 +37,4 @@ python -m stats_helper.cli hist transactions.csv amount
 Tests
 pytest
 # webellian
+# webellian

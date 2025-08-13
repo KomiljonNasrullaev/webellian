@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webellian"
+version = "0.1.0"
+description = "Data pipeline script for CSV → Cleaned Data → SQLite with CLI"
+authors = [
+    { name = "Komiljon", email = "komiljon.nasrullayev@gmail.com" }
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "click>=8.0.0",
+    "SQLAlchemy>=2.0.0",
+    "python-dateutil>=2.8.0",
+    "pytest>=7.0.0",
+    "matplotlib>=3.7.0"
+]
+
+[tool.setuptools]
+packages = ["data_pipeline", "stats_helper"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
